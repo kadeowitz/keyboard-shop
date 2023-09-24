@@ -1,0 +1,121 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Universal styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    background-image: url('black.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #f1e7e7;
+}
+
+.container {
+    max-width: 940px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 4px double #000;
+    background-color: rgba(66, 52, 52, 0.6);
+}
+
+#logo {
+    width: 150px;
+    margin: 10px auto 25px auto;
+    text-align: center;
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 2px 5px #cec0c0;
+}
+
+nav ul {
+    text-align: center;
+    border-top: 5px groove #f1e7e7;
+    border-bottom: 1px groove #e4d1d1;
+    padding: 15px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #bde7ecf3;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover, nav a.on {
+    color: #77eb77;
+    background-color: rgba(58, 55, 55, 0.27);
+    transform: scale(1.05);
+}
+
+.main-content {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.specialization-text {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.keyboard-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.keyboard-option {
+    display: inline-block;
+    margin-left: 50px; 
+    color: #c4d0da; 
+    cursor: pointer;
+    padding: 20px;
+    font-size: 13px;
+    transition: padding 0.3s linear;
+    transition-delay: 0.1;
+    transition-duration: 0.3s;
+    opacity: 1;
+    transform: scale(1);
+    background-image: none; 
+    background-size: cover;
+}
+
+.keyboard-option:hover{
+    transform: scale(2);
+    box-shadow: 0 0 10px #021c31;
+    opacity: 1;
+    color: #da2d2d;
+    font-size: 15px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+.keyboard-option#fender-rhodes:hover {
+    background-image: url('/fender.jpg');
+    background-size: cover;
+}
+
+.keyboard-option#wurlitzer-ep200:hover {
+    background-image: url('wurlitzer.jpg');
+}
+
+.keyboard-option#hohner-clavinet:hover {
+    background-image: url('hohner.jpg');
+}
